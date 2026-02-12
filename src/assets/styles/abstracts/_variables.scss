@@ -1,0 +1,45 @@
+// Colors
+$board-bg: rgb(48, 126, 175);
+$list-bg: #ebecf0;
+$card-bg: #ffffff;
+$text-primary: #172b4d;
+$text-secondary: #5e6c84;
+$btn-primary: #5aac44;
+$btn-primary-hover: #519839;
+$btn-danger: #cf513d;
+$btn-danger-hover: #b04632;
+$add-list-bg: hsla(0, 0%, 100%, 0.24);
+$add-list-bg-hover: hsla(0, 0%, 100%, 0.32);
+$modal-overlay: rgba(0, 0, 0, 0.64);
+$border-color: #dfe1e6;
+$comment-badge-bg: #e4e6ea;
+$comment-badge-text: #5e6c84;
+$actions-bg: #ffffff;
+
+// Typography
+$font-family: Roboto, sans-serif;
+$font-size-base: 14px;
+$font-size-sm: 12px;
+$font-size-lg: 16px;
+$font-size-xl: 18px;
+
+// Spacing
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 12px;
+$spacing-lg: 16px;
+$spacing-xl: 24px;
+
+// Borders
+$border-radius: 3px;
+$border-radius-md: 6px;
+$border-radius-lg: 8px;
+
+// Sizes
+$list-width: 272px;
+$board-header-height: 50px;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
