@@ -1,0 +1,9 @@
+@use "./abstracts/variables" as *;
+@use "./abstracts/mixins" as *;
+@use "./base/typography";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
