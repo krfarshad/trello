@@ -1,0 +1,39 @@
+@use "@/assets/styles/abstracts/variables" as *;
+@use "@/assets/styles/abstracts/mixins" as *;
+
+.header {
+  padding: $spacing-sm $spacing-lg;
+  height: $board-header-height;
+  @include flex-between;
+
+  @include respond-to(sm) {
+    padding: $spacing-sm;
+  }
+}
+
+.title {
+  font-size: $font-size-xl;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  padding: $spacing-xs $spacing-sm;
+  border-radius: $border-radius;
+  border: none;
+  background: transparent;
+
+  &:hover {
+    background: hsla(0, 0%, 100%, 0.2);
+  }
+}
+
+.titleInput {
+  font-size: $font-size-xl;
+  font-weight: 700;
+  color: #fff;
+  background: hsla(0, 0%, 100%, 0.2);
+  border: 2px solid hsla(0, 0%, 100%, 0.5);
+  border-radius: $border-radius;
+  padding: $spacing-xs $spacing-sm;
+  outline: none;
+  font-family: $font-family;
+}

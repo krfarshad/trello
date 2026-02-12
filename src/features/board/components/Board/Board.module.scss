@@ -1,0 +1,6 @@
+@use "@/assets/styles/abstracts/variables" as *;
+
+.board {
+  min-height: 100vh;
+  background-color: $board-bg;
+}

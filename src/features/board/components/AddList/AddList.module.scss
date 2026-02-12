@@ -1,0 +1,62 @@
+@use "@/assets/styles/abstracts/variables" as *;
+@use "@/assets/styles/abstracts/mixins" as *;
+
+.addListBtn {
+  background: $add-list-bg;
+  border: none;
+  color: #fff;
+  padding: $spacing-md $spacing-lg;
+  font-size: $font-size-base;
+  cursor: pointer;
+  border-radius: $border-radius-lg;
+  min-width: $list-width;
+  text-align: left;
+  font-family: $font-family;
+  flex-shrink: 0;
+  font-weight: 600;
+
+  &:hover {
+    background: $add-list-bg-hover;
+  }
+
+  @include respond-to(sm) {
+    min-width: 240px;
+  }
+}
+
+.form {
+  background: $list-bg;
+  border-radius: $border-radius-lg;
+  padding: $spacing-sm;
+  min-width: $list-width;
+  flex-shrink: 0;
+
+  @include respond-to(sm) {
+    min-width: 240px;
+  }
+}
+
+.input {
+  @include input-base;
+  margin-bottom: $spacing-sm;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: $text-secondary;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+
+  &:hover {
+    color: $text-primary;
+  }
+}

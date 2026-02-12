@@ -1,0 +1,51 @@
+@use "@/assets/styles/abstracts/variables" as *;
+@use "@/assets/styles/abstracts/mixins" as *;
+
+.card {
+  background: $card-bg;
+  border-radius: $border-radius;
+  @include card-shadow;
+  padding: 6px $spacing-sm;
+  margin-bottom: $spacing-sm;
+  cursor: grab;
+  min-height: 20px;
+
+  &:hover {
+    background: #f4f5f7;
+  }
+
+  &.dragging {
+    opacity: 0.5;
+  }
+}
+
+.cardTitle {
+  font-size: $font-size-base;
+  color: $text-primary;
+  word-wrap: break-word;
+  margin-bottom: $spacing-xs;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.commentBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: $comment-badge-bg;
+  color: $comment-badge-text;
+  font-size: $font-size-sm;
+  padding: 2px $spacing-sm;
+  border-radius: $border-radius;
+  border: none;
+  cursor: pointer;
+  font-family: $font-family;
+  font-weight: 600;
+
+  &:hover {
+    background: #d4d6da;
+  }
+}

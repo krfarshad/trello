@@ -1,0 +1,52 @@
+@use "@/assets/styles/abstracts/variables" as *;
+@use "@/assets/styles/abstracts/mixins" as *;
+
+.addCardBtn {
+  background: none;
+  border: none;
+  color: $text-secondary;
+  padding: $spacing-sm;
+  font-size: $font-size-base;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  border-radius: $border-radius;
+  font-family: $font-family;
+
+  &:hover {
+    background: rgba(9, 30, 66, 0.08);
+    color: $text-primary;
+  }
+}
+
+.form {
+  padding: 0 $spacing-sm $spacing-sm;
+}
+
+.textarea {
+  @include input-base;
+  resize: vertical;
+  min-height: 54px;
+  margin-bottom: $spacing-sm;
+  overflow-wrap: break-word;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: $text-secondary;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+
+  &:hover {
+    color: $text-primary;
+  }
+}

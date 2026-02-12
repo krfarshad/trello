@@ -1,0 +1,50 @@
+@use "@/assets/styles/abstracts/variables" as *;
+@use "@/assets/styles/abstracts/mixins" as *;
+
+.emptyState {
+  color: $text-secondary;
+  font-size: $font-size-base;
+  padding: $spacing-sm 0;
+  margin-bottom: $spacing-md;
+}
+
+.commentList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 $spacing-lg;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.commentItem {
+  padding: $spacing-sm 0;
+  border-bottom: 1px solid $border-color;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.commentMeta {
+  font-size: $font-size-sm;
+  color: $text-secondary;
+  margin-bottom: $spacing-xs;
+  font-weight: 600;
+}
+
+.commentText {
+  font-size: $font-size-base;
+  color: $text-primary;
+}
+
+.textarea {
+  @include input-base;
+  resize: vertical;
+  min-height: 60px;
+  margin-bottom: $spacing-sm;
+}
+
+.submitRow {
+  display: flex;
+  justify-content: flex-end;
+}

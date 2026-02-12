@@ -1,0 +1,65 @@
+@use "@/assets/styles/abstracts/variables" as *;
+@use "@/assets/styles/abstracts/mixins" as *;
+
+.list {
+  background: $list-bg;
+  border-radius: $border-radius-lg;
+  min-width: $list-width;
+  max-width: $list-width;
+  max-height: calc(100vh - #{$board-header-height} - 40px);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+
+  &.dragging {
+    opacity: 0.5;
+  }
+
+  @include respond-to(sm) {
+    min-width: 240px;
+    max-width: 240px;
+  }
+}
+
+.listHeader {
+  @include flex-between;
+  padding: $spacing-sm $spacing-sm $spacing-xs;
+  gap: $spacing-xs;
+}
+
+.listTitle {
+  font-size: $font-size-base;
+  font-weight: 700;
+  color: $text-primary;
+  padding: $spacing-xs $spacing-sm;
+  cursor: pointer;
+  flex: 1;
+  @include truncate;
+  background: none;
+  border: none;
+  text-align: left;
+  font-family: $font-family;
+
+  &:hover {
+    background: rgba(9, 30, 66, 0.08);
+    border-radius: $border-radius;
+  }
+}
+
+.listTitleInput {
+  @include input-base;
+  font-weight: 700;
+  flex: 1;
+  padding: $spacing-xs $spacing-sm;
+}
+
+.cards {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0 $spacing-sm;
+  min-height: 2px;
+}
+
+.footer {
+  padding: $spacing-xs;
+}
