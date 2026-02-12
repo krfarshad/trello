@@ -1,3 +1,5 @@
+import { HomePage } from "@/features/board";
+
 export default function Home() {
-  return <div className=""></div>;
+  return <HomePage />;
 }
