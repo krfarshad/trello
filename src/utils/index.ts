@@ -1,1 +1,1 @@
-export * from "./apiModel";
+export * from "./indexDb";
